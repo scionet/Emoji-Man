@@ -146,6 +146,8 @@ p {
 @media only screen and (max-width: 600px) {
     .container {
         zoom: normal;
-        height: 100vh;
+    }
+    html, body {
+        overflow: hidden;
     }
 }
