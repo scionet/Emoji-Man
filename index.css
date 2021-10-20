@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: orange;
+    font-size: 3.5rem;
+}
+
+h3 {
+    color: white;
+}
+
+#score {
+    color: orange;
+}
+
+h3, #score {
+    font-family: 'Audiowide', cursive;
+    font-size: 2.5rem;
+}
+
+.container {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 420px;
+    height: 420px;
+    background-color: white;
+    border: double white;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;
+}
+
+.pac-dot {
+    background-color: orange;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: blue;
+}
+
+.ghost-lair, .empty {
+    background-color: white;
+}
+
+.power-pellet {
+    background-color: orange;
+    border-radius: 7.0px;
+    animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+    10% {
+      opacity: 0;
+    }
+}
+
+.pacman {
+    background-color: white;
+    border: none;
+}
+
+.pacman::before {
+    content: "🤪";
+    font-size: 12px;
+}
+
+.blinky {
+    background-color: red;
+    border: none;
+}
+
+.pinky {
+    background-color: pink;
+    border: none;
+}
+
+.inky {
+    background-color: lightblue;
+    border: none;
+}
+
+.clyde {
+    background-color: yellow;
+    border: none;
+}
+
+.blinky::before,
+.pinky::before,
+.inky::before,
+.clyde::before {
+    content: "👻";
+    font-size: 12px;
+}
