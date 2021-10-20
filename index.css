@@ -134,3 +134,9 @@ p {
     content: "👻";
     font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        zoom: normal;
+    }
+}
