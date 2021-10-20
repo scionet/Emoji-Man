@@ -8,7 +8,7 @@ body {
 h1 {
     font-family: 'Press Start 2P', cursive;
     color: orange;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 h3, h4, p {
@@ -17,15 +17,16 @@ h3, h4, p {
 }
 
 h3, #score {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.15rem;
+    color: #315399;
 }
 
 p {
-    font-size: 1rem;
+    font-size: .75rem;
 }
 
 #score {
@@ -33,10 +34,10 @@ p {
 }
 
 .container {
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    max-width: 570px;
+    zoom: 200%;
 }
 
 .grid {
@@ -46,7 +47,6 @@ p {
     width: 420px;
     height: 420px;
     border: double white;
-    zoom: 200%;
 }
 
 .grid div {
