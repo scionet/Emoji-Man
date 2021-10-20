@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap');
 
+html, body {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -146,8 +150,5 @@ p {
 @media only screen and (max-width: 600px) {
     .container {
         zoom: normal;
-    }
-    html, body {
-        overflow: hidden;
     }
 }
