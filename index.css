@@ -38,6 +38,7 @@ h3, #score {
     height: 420px;
     background-color: white;
     border: double white;
+    zoom: 200%
 }
 
 .grid div {
