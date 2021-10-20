@@ -155,7 +155,7 @@ document.addEventListener('keyup', control)
 function pacDotEaten() {
     if (squares[pacmanCurrentIndex].classList.contains('pac-dot')) {
         squares[pacmanCurrentIndex].classList.remove('pac-dot')
-        score++
+        score +=10
         scoreDisplay.innerHTML = score
     }
 }
@@ -163,7 +163,7 @@ function pacDotEaten() {
 function powerPelletEaten() {
     if (squares[pacmanCurrentIndex].classList.contains('power-pellet')) {
         squares[pacmanCurrentIndex].classList.remove('power-pellet')
-        score *= 3
+        score +=50
         scoreDisplay.innerHTML = score
     }
 }

@@ -11,17 +11,25 @@ h1 {
     font-size: 3.5rem;
 }
 
-h3 {
+h3, h4, p {
     color: white;
+    font-family: 'Audiowide', cursive;
+}
+
+h3, #score {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 #score {
     color: orange;
-}
-
-h3, #score {
-    font-family: 'Audiowide', cursive;
-    font-size: 2.5rem;
 }
 
 .container {
@@ -36,7 +44,6 @@ h3, #score {
     margin: auto;
     width: 420px;
     height: 420px;
-    background-color: white;
     border: double white;
     zoom: 200%;
 }
@@ -48,22 +55,29 @@ h3, #score {
 
 .pac-dot {
     background-color: orange;
-    border: 5px solid white;
+    border: 6px solid black;
     box-sizing: border-box;
 }
 
 .wall {
-    background-color: blue;
+    background-color: #315399;
 }
 
 .ghost-lair, .empty {
-    background-color: white;
+    /* background-color: white; */
 }
 
 .power-pellet {
-    background-color: orange;
-    border-radius: 7.0px;
+    /* background-color: orange; */
+    /* border-radius: 7.0px; */
     animation: blinker 1s step-start infinite;
+}
+
+.power-pellet::before {
+    position: relative;
+    z-index: 200;
+    content: "🤬";
+    font-size: 16px;
 }
 
 @keyframes blinker {
@@ -73,39 +87,49 @@ h3, #score {
 }
 
 .pacman {
-    background-color: white;
     border: none;
 }
 
 .pacman::before {
+    position: relative;
+    z-index: 200;
     content: "🤪";
-    font-size: 12px;
-}
-
-.blinky {
-    background-color: red;
-    border: none;
-}
-
-.pinky {
-    background-color: pink;
-    border: none;
-}
-
-.inky {
-    background-color: lightblue;
-    border: none;
-}
-
-.clyde {
-    background-color: yellow;
-    border: none;
+    font-size: 20px;
 }
 
 .blinky::before,
 .pinky::before,
 .inky::before,
 .clyde::before {
+    background-color: transparent;
+    border: none;
+}
+
+.blinky::before {
+    position: relative;
+    z-index: 200;
+    content: "🤖";
+    font-size: 20px;
+}
+
+.pinky::before {
+    position: relative;
+    z-index: 200;
+    content: "💩";
+    font-size: 20px;
+}
+
+.inky::before {
+    position: relative;
+    z-index: 200;
+    content: "👽";
+    font-size: 20px;
+}
+
+
+.clyde::before {
+    position: relative;
+    z-index: 200;
     content: "👻";
-    font-size: 12px;
+    font-size: 20px;
 }
