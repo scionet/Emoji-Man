@@ -68,21 +68,21 @@ p {
     /* background-color: white; */
 }
 
-.power-pellet {
-    /* background-color: orange; */
-    /* border-radius: 7.0px; */
-    animation: blinker 1s step-start infinite;
-}
-
 .power-pellet::before {
     position: relative;
     z-index: 200;
     content: "🤬";
-    font-size: 16px;
+    font-size: 1em;
+}
+
+.power-pellet {
+    /* background-color: orange; */
+    /* border-radius: 7.0px; */
+    animation: blinker 100ms step-start infinite;
 }
 
 @keyframes blinker {
-    10% {
+    30% {
       opacity: 0;
     }
 }
@@ -95,7 +95,7 @@ p {
     position: relative;
     z-index: 200;
     content: "🤪";
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .blinky::before,
@@ -109,22 +109,28 @@ p {
 .blinky::before {
     position: relative;
     z-index: 200;
-    content: "🤖";
-    font-size: 20px;
+    content: "👻";
+    font-size: 1.25em;
+    color: transparent;
+    text-shadow: 0 0 0 green;
 }
 
 .pinky::before {
     position: relative;
     z-index: 200;
-    content: "💩";
-    font-size: 20px;
+    content: "👻";
+    font-size: 1.25em;
+    color: transparent;
+    text-shadow: 0 0 0 pink;
 }
 
 .inky::before {
     position: relative;
     z-index: 200;
-    content: "👽";
-    font-size: 20px;
+    content: "👻";
+    font-size: 1.25em;
+    color: transparent;
+    text-shadow: 0 0 0 yellow;
 }
 
 
@@ -132,7 +138,9 @@ p {
     position: relative;
     z-index: 200;
     content: "👻";
-    font-size: 20px;
+    font-size: 1.25em;
+    color: transparent;
+    text-shadow: 0 0 0 red;
 }
 
 @media only screen and (max-width: 600px) {
