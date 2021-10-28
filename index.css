@@ -95,7 +95,7 @@ p {
     position: relative;
     z-index: 200;
     content: "🤪";
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 .blinky::before,
@@ -110,7 +110,7 @@ p {
     position: relative;
     z-index: 200;
     content: "👻";
-    font-size: 1.25em;
+    font-size: 1em;
     color: transparent;
     text-shadow: 0 0 0 green;
 }
@@ -119,7 +119,7 @@ p {
     position: relative;
     z-index: 200;
     content: "👻";
-    font-size: 1.25em;
+    font-size: 1em;
     color: transparent;
     text-shadow: 0 0 0 pink;
 }
@@ -128,7 +128,7 @@ p {
     position: relative;
     z-index: 200;
     content: "👻";
-    font-size: 1.25em;
+    font-size: 1em;
     color: transparent;
     text-shadow: 0 0 0 yellow;
 }
@@ -138,9 +138,15 @@ p {
     position: relative;
     z-index: 200;
     content: "👻";
-    font-size: 1.25em;
+    font-size: 1em;
     color: transparent;
     text-shadow: 0 0 0 red;
+}
+
+.scared-ghost::before {
+    border: none;
+    color: transparent;
+    text-shadow: 0 0 0 white;
 }
 
 @media only screen and (max-width: 600px) {
