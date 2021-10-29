@@ -264,5 +264,6 @@ function checkForWin() {
         document.removeEventListener('keyup', control)
         //tell our user we have won
         scoreDisplay.innerHTML = 'You WIN!'
+        setInterval('window.location.reload()', 3000);
     }
 }
