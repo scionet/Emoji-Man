@@ -251,7 +251,7 @@ function checkForGameOver() {
     //remove eventlistener from our control function
     document.removeEventListener('keyup', control)
     //tell user the game is over
-    scoreDisplay.innerHTML = 'You LOSE'
+    scoreDisplay.innerHTML = 'You LOSE!'
     }
 }
 
